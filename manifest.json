@@ -2,7 +2,7 @@
   "name": "Login Switcher",
   "version": "0.0.0",
   "manifest_version": 2,
-  "description": "Switch between different logins for the same site.",
+  "description": "Switch between different logins for the same site",
   "homepage_url": "https://gitlab.com/nslater/login-switcher",
   "background": {
     "scripts": [
