@@ -1,0 +1,42 @@
+{
+  "name": "Login Switcher",
+  "version": "0.0.0",
+  "manifest_version": 2,
+  "description": "Switch between different logins for the same site.",
+  "homepage_url": "https://gitlab.com/nslater/login-switcher",
+  "background": {
+    "scripts": [
+        "vendor/async.js",
+        "src/background.js"
+    ]
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "page_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "Login Switcher",
+    "default_popup": "src/page_action.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.tumblr.com/*"],
+      "js": ["src/content/tumblr.js"]
+    },
+    {
+      "matches": ["*://twitter.com/*"],
+      "js": ["src/content/twitter.js"]
+    }
+  ],
+  "options_page": "src/options.html",
+  "permissions": [
+    "cookies",
+    "storage",
+    "tabs",
+    "declarativeContent",
+    "*://*.tumblr.com/*",
+    "*://twitter.com/*"
+  ]
+}
