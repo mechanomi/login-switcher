@@ -8,7 +8,7 @@ I've not submitted this to the official Chrome Extensions store (yet) so you're 
 
 Install manually like so:
 
-1. Download the [ZIP archive](https://gitlab.com/nslater/login-switcher/repository/archive.zip?ref=master).
+1. Download the [ZIP archive](https://github.com/nslater/login-switcher/archive/master.zip).
 2. Expand the ZIP file and move the resulting `login-switcher` directory somewhere safe. This directory will need to continue existing in this location for the Chrome extension to continue to work.
 3. Come back to Chrome, and visit `chrome://extensions` by typing (or copying and pasting) that URL into your address bar and hitting *Enter*.
 4. Ensure the *Developer mode* checkbox in the top right-hand corner of the *Extensions* screen is ticked. If it's not ticked, tick it now, and leave it ticked. You have to do this because you're loading what's called an "unpacked extension", i.e. the files inside the `login-switcher` directory.
